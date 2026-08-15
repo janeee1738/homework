@@ -1,0 +1,180 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main page */
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #fff0f6;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Header */
+#main-header {
+    background-color: #ff69b4;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 5px solid #800080;
+}
+
+#main-header h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#main-header p {
+    font-size: 1.1rem;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #800080;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 8px;
+}
+
+.navbar a:hover {
+    background-color: #ff69b4;
+}
+
+/* Main content */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Hero section */
+.hero {
+    background-color: white;
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    border: 3px solid #ff69b4;
+}
+
+.hero h2 {
+    color: #800080;
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* Cards */
+.card {
+    background-color: white;
+    border: 3px solid #ff69b4;
+    margin-bottom: 25px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.card h2 {
+    color: #800080;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+/* Favorite things */
+.beach-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.beach-list div {
+    background-color: #ffe4f1;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 5px solid #ff69b4;
+}
+
+.beach-list h3 {
+    color: #800080;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 8px;
+}
+
+/* Quote */
+.quote {
+    background-color: #ff69b4;
+    color: white;
+    text-align: center;
+    padding: 35px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.quote h2 {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #800080;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    #main-header h1 {
+        font-size: 2rem;
+    }
+
+    .beach-list {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+    #main-header {
+        padding: 35px 15px;
+    }
+
+    #main-header h1 {
+        font-size: 1.7rem;
+    }
+
+    main {
+        padding: 0 15px;
+    }
+
+    .card,
+    .hero {
+        padding: 20px;
+    }
+
+    .navbar a {
+        font-size: 0.9rem;
+    }
+}
