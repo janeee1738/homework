@@ -107,12 +107,96 @@
                 and make beautiful memories."
             </p>
         </section>
+<section class="card">
+
+```
+<h2>Make My Beach Page Interactive 🌊</h2>
+
+<button id="beachButton">Click for a Beach Message 💕</button>
+
+<p id="beachMessage">
+    Click the button to see a special beach message!
+</p>
+
+<label for="nameInput">Enter your name:</label>
+
+<input type="text" id="nameInput" placeholder="Type your name">
+
+<p id="nameGreeting">Hello, beach lover! 🏖️</p>
+
+<h3>Add Your Favorite Beach Activities</h3>
+
+<label for="activityInput">Beach activity:</label>
+
+<input type="text" id="activityInput" placeholder="Example: Swimming">
+
+<button id="addActivityButton">Add Activity</button>
+
+<ul id="activityList">
+    <li>Listening to the waves 🌊</li>
+    <li>Walking on the sand 🏖️</li>
+</ul>
+
+</section>
 
     </main>
 
     <footer>
         <p>&copy; 2026 My Beach Page | Made with 💗 and sunshine</p>
     </footer>
+<script>
 
+    const beachButton = document.querySelector("#beachButton");
+    const beachMessage = document.querySelector("#beachMessage");
+
+    beachButton.addEventListener("click", function () {
+        beachMessage.textContent =
+            "The beach is the perfect place to relax, enjoy the waves, and make memories! 🌊☀️💗";
+    });
+
+
+    const nameInput = document.querySelector("#nameInput");
+    const nameGreeting = document.querySelector("#nameGreeting");
+
+    nameInput.addEventListener("input", function () {
+
+        if (nameInput.value.trim() !== "") {
+            nameGreeting.textContent =
+                "Welcome to my beach page, " + nameInput.value + "! 🏖️";
+
+            nameGreeting.style.fontWeight = "bold";
+            nameGreeting.style.fontSize = "24px";
+
+        } else {
+            nameGreeting.textContent = "Hello, beach lover! 🏖️";
+            nameGreeting.style.fontWeight = "normal";
+            nameGreeting.style.fontSize = "16px";
+        }
+
+    });
+
+
+    const activityInput = document.querySelector("#activityInput");
+    const addActivityButton = document.querySelector("#addActivityButton");
+    const activityList = document.querySelector("#activityList");
+
+    addActivityButton.addEventListener("click", function () {
+
+        const activityText = activityInput.value.trim();
+
+        if (activityText !== "") {
+
+            const newActivity = document.createElement("li");
+
+            newActivity.textContent = activityText;
+
+            activityList.appendChild(newActivity);
+
+            activityInput.value = "";
+        }
+
+    });
+
+</script>
 </body>
 </html>
