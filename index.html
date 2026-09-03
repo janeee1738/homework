@@ -1,4 +1,3 @@
-html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,202 +5,82 @@ html
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Why I Love the Beach</title>
+    <title>Why I Love Going to the Beach</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <!-- ==========================================
-         HEADER
-         ========================================== -->
-
+    <!-- HEADER -->
     <header id="main-header">
-
         <h1>Why I Love Going to the Beach 🌊</h1>
 
-        <p>
-            The beach is one of my favorite places to relax,
-            have fun, and enjoy nature.
-        </p>
-
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#why-i-love-it">Why I Love It</a>
+            <a href="#favorite-things">My Favorite Things</a>
+            <a href="#contact-form">Contact</a>
+        </nav>
     </header>
 
 
-    <!-- ==========================================
-         NAVIGATION
-         ========================================== -->
-
-    <nav class="navbar">
-
-        <a href="#home">Home</a>
-
-        <a href="#why-i-love-it">Why I Love It</a>
-
-        <a href="#favorite-things">My Favorite Things</a>
-
-        <a href="#contact-form">Contact</a>
-
-    </nav>
-
-
-    <!-- ==========================================
-         MAIN CONTENT
-         ========================================== -->
-
+    <!-- MAIN CONTENT -->
     <main>
 
-        <!-- HOME SECTION -->
-
+        <!-- HERO -->
         <section id="home" class="hero">
-
-            <h2>My Happy Place 🏖️</h2>
+            <h2>Welcome to My Beach Page 🏖️</h2>
 
             <p>
-                Going to the beach is something I really enjoy because
-                it gives me a chance to relax and take a break from
-                everyday life. I love listening to the waves, feeling
-                the sand, and enjoying the warm sunshine.
+                The beach is one of my favorite places because
+                it helps me relax, enjoy nature, and make memories.
             </p>
 
+            <button type="button" id="beachButton">
+                Click for a Beach Message 💕
+            </button>
+
+            <p id="beachMessage" aria-live="polite">
+                Hello, beach lover! 🌊
+            </p>
         </section>
 
 
         <!-- WHY I LOVE THE BEACH -->
-
         <section id="why-i-love-it" class="card">
 
-            <h2>Why I Love Going to the Beach</h2>
+            <h2>Why I Love Going to the Beach 🌊</h2>
 
             <p>
-                One of the biggest reasons I love the beach is because
-                it makes me feel calm and peaceful. The sound of the
-                ocean waves is relaxing, and being outside helps me
-                forget about stress for a while.
-            </p>
-
-            <p>
-                I also love spending time at the beach with people I
-                care about. We can talk, laugh, take pictures, walk
-                along the water, and make memories together.
-            </p>
-
-            <p>
-                Another reason I love the beach is because there is
-                always something fun to do. I can swim, look for
-                seashells, build sandcastles, walk along the shore,
-                or simply sit and enjoy the view.
+                I love going to the beach because it is peaceful,
+                beautiful, and relaxing. I enjoy listening to the
+                waves, feeling the sunshine, and spending time
+                making memories.
             </p>
 
         </section>
 
 
         <!-- FAVORITE THINGS -->
-
         <section id="favorite-things" class="card">
 
-            <h2>My Favorite Things About the Beach</h2>
+            <h2>My Favorite Beach Things ☀️</h2>
 
-            <div class="beach-list">
-
-                <div>
-
-                    <h3>🌊 The Ocean</h3>
-
-                    <p>
-                        I love watching and listening to the waves.
-                        The sound of the water makes the beach feel
-                        peaceful.
-                    </p>
-
-                </div>
-
-
-                <div>
-
-                    <h3>☀️ The Sunshine</h3>
-
-                    <p>
-                        I enjoy warm, sunny days at the beach because
-                        they make the whole experience feel fun and
-                        relaxing.
-                    </p>
-
-                </div>
-
-
-                <div>
-
-                    <h3>🏖️ The Sand</h3>
-
-                    <p>
-                        Walking barefoot in the sand is one of my
-                        favorite parts of being at the beach.
-                    </p>
-
-                </div>
-
-
-                <div>
-
-                    <h3>📸 Making Memories</h3>
-
-                    <p>
-                        I love taking pictures and creating memories
-                        that I can look back on later.
-                    </p>
-
-                </div>
-
-            </div>
+            <ul>
+                <li>🌊 Ocean</li>
+                <li>☀️ Sunshine</li>
+                <li>🏖️ Sand</li>
+                <li>💗 Making Memories</li>
+            </ul>
 
         </section>
 
 
-        <!-- BEACH QUOTE -->
-
-        <section class="quote">
-
-            <h2>My Beach Thought 💕</h2>
-
-            <p>
-                "The beach is my favorite place to relax,
-                enjoy the moment, and make beautiful memories."
-            </p>
-
-        </section>
-
-
-        <!-- ==========================================
-             JAVASCRIPT INTERACTION
-             ========================================== -->
-
+        <!-- NAME INTERACTION -->
         <section class="card">
 
-            <h2>Make My Beach Page Interactive 🌊</h2>
-
-            <!-- BEACH MESSAGE -->
-
-            <button id="beachButton" type="button">
-                Click for a Beach Message 💕
-            </button>
-
-            <p id="beachMessage">
-                Click the button to see a special beach message!
-            </p>
-
-
-            <!-- NAME INTERACTION -->
+            <h2>Meet Another Beach Lover 🏖️</h2>
 
             <label for="nameInput">
                 Enter your name:
@@ -210,17 +89,20 @@ html
             <input
                 type="text"
                 id="nameInput"
-                placeholder="Type your name"
+                placeholder="Your name"
             >
 
-            <p id="nameGreeting">
+            <p id="nameGreeting" aria-live="polite">
                 Hello, beach lover! 🏖️
             </p>
 
+        </section>
 
-            <!-- ADD BEACH ACTIVITY -->
 
-            <h3>Add Your Favorite Beach Activities</h3>
+        <!-- ACTIVITY INTERACTION -->
+        <section class="card">
+
+            <h2>Add Your Favorite Beach Activity 🌴</h2>
 
             <label for="activityInput">
                 Beach activity:
@@ -232,132 +114,113 @@ html
                 placeholder="Example: Swimming"
             >
 
-            <button
-                id="addActivityButton"
-                type="button"
-            >
+            <button type="button" id="addActivityButton">
                 Add Activity
             </button>
 
             <ul id="activityList">
-
-                <li>Listening to the waves 🌊</li>
-
-                <li>Walking on the sand 🏖️</li>
-
             </ul>
 
         </section>
 
 
-        <!-- ==========================================
-             CONTACT FORM
-             ========================================== -->
+        <!-- QUOTE -->
+        <section class="quote">
 
-        <section id="contact-form" class="card">
+            <blockquote>
+                "The ocean is calling and I must go." 🌊
+            </blockquote>
 
-            <h2>Share Your Beach Experience 🌊</h2>
-
-            <p>
-                Tell me about your favorite beach experience!
-            </p>
+        </section>
 
 
-            <form id="beachForm">
+        <!-- CONTACT FORM -->
+        <section id="contact-form">
+
+            <h2>Contact Me 💌</h2>
+
+            <form id="beachForm" novalidate>
 
                 <!-- NAME -->
+                <label for="name">
+                    Name:
+                </label>
 
-                <div class="form-group">
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                >
 
-                    <label for="name">
-                        Name:
-                    </label>
-
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                    >
-
-                    <p
-                        id="nameError"
-                        class="form-error"
-                        aria-live="polite"
-                    ></p>
-
-                </div>
+                <p
+                    id="nameError"
+                    class="form-error"
+                    aria-live="polite"
+                ></p>
 
 
                 <!-- EMAIL -->
+                <label for="email">
+                    Email:
+                </label>
 
-                <div class="form-group">
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                >
 
-                    <label for="email">
-                        Email:
-                    </label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                    >
-
-                    <p
-                        id="emailError"
-                        class="form-error"
-                        aria-live="polite"
-                    ></p>
-
-                </div>
+                <p
+                    id="emailError"
+                    class="form-error"
+                    aria-live="polite"
+                ></p>
 
 
                 <!-- FAVORITE BEACH -->
+                <label for="favoriteBeach">
+                    Favorite Beach:
+                </label>
 
-                <div class="form-group">
+                <input
+                    type="text"
+                    id="favoriteBeach"
+                    name="favoriteBeach"
+                    required
+                >
 
-                    <label for="favoriteBeach">
-                        Favorite Beach:
-                    </label>
-
-                    <input
-                        type="text"
-                        id="favoriteBeach"
-                        name="favoriteBeach"
-                    >
-
-                    <p
-                        id="favoriteBeachError"
-                        class="form-error"
-                        aria-live="polite"
-                    ></p>
-
-                </div>
+                <p
+                    id="favoriteBeachError"
+                    class="form-error"
+                    aria-live="polite"
+                ></p>
 
 
                 <!-- MESSAGE -->
+                <label for="message">
+                    Message:
+                </label>
 
-                <div class="form-group">
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                ></textarea>
 
-                    <label for="message">
-                        Beach Message:
-                    </label>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="4"
-                    ></textarea>
-
-                    <p
-                        id="messageError"
-                        class="form-error"
-                        aria-live="polite"
-                    ></p>
-
-                </div>
+                <p
+                    id="messageError"
+                    class="form-error"
+                    aria-live="polite"
+                ></p>
 
 
-                <!-- SUCCESS MESSAGE -->
+                <!-- SUBMIT -->
+                <button type="submit">
+                    Send Beach Message 🌊
+                </button>
 
                 <p
                     id="formSuccess"
@@ -365,67 +228,41 @@ html
                     aria-live="polite"
                 ></p>
 
-
-                <!-- SUBMIT -->
-
-                <button type="submit">
-                    Send Beach Message 🌊
-                </button>
-
             </form>
 
         </section>
 
 
-        <!-- ==========================================
-             API BONUS
-             ========================================== -->
-
+        <!-- BONUS API -->
         <section id="beach-api" class="card">
 
-            <h2>Beach Inspiration ☀️</h2>
+            <h2>Need Some Beach Inspiration? 🌊</h2>
 
-            <p>
-                Click the button to get some random inspiration!
-            </p>
-
-            <button
-                type="button"
-                id="apiButton"
-            >
+            <button type="button" id="apiButton">
                 Get Beach Inspiration
             </button>
 
-            <p
-                id="apiResult"
-                aria-live="polite"
-            ></p>
+            <p id="apiResult" aria-live="polite">
+            </p>
 
         </section>
 
     </main>
 
 
-    <!-- ==========================================
-         FOOTER
-         ========================================== -->
-
+    <!-- FOOTER -->
     <footer>
 
         <p>
-            &copy; 2026 My Beach Page | Made with 💗 and sunshine
+            © 2026 Janeee | My Beach Page 🌊💗
         </p>
 
     </footer>
 
 
-    <!-- ==========================================
-         JAVASCRIPT
-         ========================================== -->
-
+    <!-- JAVASCRIPT -->
     <script src="script.js" defer></script>
 
 </body>
 
 </html>
-```

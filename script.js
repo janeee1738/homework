@@ -1,4 +1,3 @@
-javascript
 // ==========================================
 // BEACH BUTTON INTERACTION
 // ==========================================
@@ -73,13 +72,9 @@ const message = document.querySelector("#message");
 
 const nameError = document.querySelector("#nameError");
 const emailError = document.querySelector("#emailError");
-const favoriteBeachError =
-    document.querySelector("#favoriteBeachError");
-const messageError =
-    document.querySelector("#messageError");
-
-const formSuccess =
-    document.querySelector("#formSuccess");
+const favoriteBeachError = document.querySelector("#favoriteBeachError");
+const messageError = document.querySelector("#messageError");
+const formSuccess = document.querySelector("#formSuccess");
 
 
 // ==========================================
@@ -88,10 +83,8 @@ const formSuccess =
 
 beachForm.addEventListener("submit", function (event) {
 
-    // Prevent the page from refreshing
     event.preventDefault();
 
-    // Clear previous messages
     nameError.textContent = "";
     emailError.textContent = "";
     favoriteBeachError.textContent = "";
@@ -106,9 +99,7 @@ beachForm.addEventListener("submit", function (event) {
     // ==========================================
 
     if (formName.value.trim() === "") {
-        nameError.textContent =
-            "Please enter your name.";
-
+        nameError.textContent = "Please enter your name.";
         formIsValid = false;
     }
 
@@ -119,15 +110,12 @@ beachForm.addEventListener("submit", function (event) {
 
     if (email.value.trim() === "") {
 
-        emailError.textContent =
-            "Please enter your email.";
-
+        emailError.textContent = "Please enter your email.";
         formIsValid = false;
 
     } else {
 
-        const emailPattern =
-            /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
         if (!emailPattern.test(email.value.trim())) {
 
@@ -197,8 +185,7 @@ formName.addEventListener("input", function () {
 
 email.addEventListener("input", function () {
 
-    const emailPattern =
-        /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (email.value.trim() === "") {
 
@@ -279,4 +266,3 @@ apiButton.addEventListener("click", function () {
             console.error(error);
         });
 });
-```
