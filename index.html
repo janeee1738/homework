@@ -1,201 +1,431 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Why I Love the Beach</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
+    <!-- ==========================================
+         HEADER
+         ========================================== -->
+
     <header id="main-header">
+
         <h1>Why I Love Going to the Beach 🌊</h1>
-        <p>The beach is one of my favorite places to relax, have fun, and enjoy nature.</p>
+
+        <p>
+            The beach is one of my favorite places to relax,
+            have fun, and enjoy nature.
+        </p>
+
     </header>
 
+
+    <!-- ==========================================
+         NAVIGATION
+         ========================================== -->
+
     <nav class="navbar">
+
         <a href="#home">Home</a>
+
         <a href="#why-i-love-it">Why I Love It</a>
+
         <a href="#favorite-things">My Favorite Things</a>
+
+        <a href="#contact-form">Contact</a>
+
     </nav>
+
+
+    <!-- ==========================================
+         MAIN CONTENT
+         ========================================== -->
 
     <main>
 
+        <!-- HOME SECTION -->
+
         <section id="home" class="hero">
+
             <h2>My Happy Place 🏖️</h2>
+
             <p>
-                Going to the beach is something I really enjoy because it gives me
-                a chance to relax and take a break from everyday life. I love
-                listening to the waves, feeling the sand, and enjoying the warm
-                sunshine.
+                Going to the beach is something I really enjoy because
+                it gives me a chance to relax and take a break from
+                everyday life. I love listening to the waves, feeling
+                the sand, and enjoying the warm sunshine.
             </p>
+
         </section>
 
+
+        <!-- WHY I LOVE THE BEACH -->
+
         <section id="why-i-love-it" class="card">
+
             <h2>Why I Love Going to the Beach</h2>
 
             <p>
-                One of the biggest reasons I love the beach is because it makes
-                me feel calm and peaceful. The sound of the ocean waves is
-                relaxing, and being outside helps me forget about stress for a
-                while.
+                One of the biggest reasons I love the beach is because
+                it makes me feel calm and peaceful. The sound of the
+                ocean waves is relaxing, and being outside helps me
+                forget about stress for a while.
             </p>
 
             <p>
-                I also love spending time at the beach with people I care about.
-                We can talk, laugh, take pictures, walk along the water, and
-                make memories together.
+                I also love spending time at the beach with people I
+                care about. We can talk, laugh, take pictures, walk
+                along the water, and make memories together.
             </p>
 
             <p>
-                Another reason I love the beach is because there is always
-                something fun to do. I can swim, look for seashells, build
-                sandcastles, walk along the shore, or simply sit and enjoy the
-                view.
+                Another reason I love the beach is because there is
+                always something fun to do. I can swim, look for
+                seashells, build sandcastles, walk along the shore,
+                or simply sit and enjoy the view.
             </p>
+
         </section>
 
+
+        <!-- FAVORITE THINGS -->
+
         <section id="favorite-things" class="card">
+
             <h2>My Favorite Things About the Beach</h2>
 
             <div class="beach-list">
+
                 <div>
+
                     <h3>🌊 The Ocean</h3>
+
                     <p>
-                        I love watching and listening to the waves. The sound of
-                        the water makes the beach feel peaceful.
+                        I love watching and listening to the waves.
+                        The sound of the water makes the beach feel
+                        peaceful.
                     </p>
+
                 </div>
 
+
                 <div>
+
                     <h3>☀️ The Sunshine</h3>
+
                     <p>
-                        I enjoy warm, sunny days at the beach because they make
-                        the whole experience feel fun and relaxing.
+                        I enjoy warm, sunny days at the beach because
+                        they make the whole experience feel fun and
+                        relaxing.
                     </p>
+
                 </div>
 
+
                 <div>
+
                     <h3>🏖️ The Sand</h3>
+
                     <p>
-                        Walking barefoot in the sand is one of my favorite parts
-                        of being at the beach.
+                        Walking barefoot in the sand is one of my
+                        favorite parts of being at the beach.
                     </p>
+
                 </div>
 
+
                 <div>
+
                     <h3>📸 Making Memories</h3>
+
                     <p>
-                        I love taking pictures and creating memories that I can
-                        look back on later.
+                        I love taking pictures and creating memories
+                        that I can look back on later.
                     </p>
+
                 </div>
+
             </div>
+
         </section>
+
+
+        <!-- BEACH QUOTE -->
 
         <section class="quote">
+
             <h2>My Beach Thought 💕</h2>
+
             <p>
-                "The beach is my favorite place to relax, enjoy the moment,
-                and make beautiful memories."
+                "The beach is my favorite place to relax,
+                enjoy the moment, and make beautiful memories."
             </p>
+
         </section>
-<section class="card">
 
-<h2>Make My Beach Page Interactive 🌊</h2>
 
-<button id="beachButton">Click for a Beach Message 💕</button>
+        <!-- ==========================================
+             JAVASCRIPT INTERACTION
+             ========================================== -->
 
-<p id="beachMessage">
-    Click the button to see a special beach message!
-</p>
+        <section class="card">
 
-<label for="nameInput">Enter your name:</label>
+            <h2>Make My Beach Page Interactive 🌊</h2>
 
-<input type="text" id="nameInput" placeholder="Type your name">
+            <!-- BEACH MESSAGE -->
 
-<p id="nameGreeting">Hello, beach lover! 🏖️</p>
+            <button id="beachButton" type="button">
+                Click for a Beach Message 💕
+            </button>
 
-<h3>Add Your Favorite Beach Activities</h3>
+            <p id="beachMessage">
+                Click the button to see a special beach message!
+            </p>
 
-<label for="activityInput">Beach activity:</label>
 
-<input type="text" id="activityInput" placeholder="Example: Swimming">
+            <!-- NAME INTERACTION -->
 
-<button id="addActivityButton">Add Activity</button>
+            <label for="nameInput">
+                Enter your name:
+            </label>
 
-<ul id="activityList">
-    <li>Listening to the waves 🌊</li>
-    <li>Walking on the sand 🏖️</li>
-</ul>
+            <input
+                type="text"
+                id="nameInput"
+                placeholder="Type your name"
+            >
 
-</section>
+            <p id="nameGreeting">
+                Hello, beach lover! 🏖️
+            </p>
+
+
+            <!-- ADD BEACH ACTIVITY -->
+
+            <h3>Add Your Favorite Beach Activities</h3>
+
+            <label for="activityInput">
+                Beach activity:
+            </label>
+
+            <input
+                type="text"
+                id="activityInput"
+                placeholder="Example: Swimming"
+            >
+
+            <button
+                id="addActivityButton"
+                type="button"
+            >
+                Add Activity
+            </button>
+
+            <ul id="activityList">
+
+                <li>Listening to the waves 🌊</li>
+
+                <li>Walking on the sand 🏖️</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ==========================================
+             CONTACT FORM
+             ========================================== -->
+
+        <section id="contact-form" class="card">
+
+            <h2>Share Your Beach Experience 🌊</h2>
+
+            <p>
+                Tell me about your favorite beach experience!
+            </p>
+
+
+            <form id="beachForm">
+
+                <!-- NAME -->
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Name:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                    >
+
+                    <p
+                        id="nameError"
+                        class="form-error"
+                        aria-live="polite"
+                    ></p>
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email:
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                    >
+
+                    <p
+                        id="emailError"
+                        class="form-error"
+                        aria-live="polite"
+                    ></p>
+
+                </div>
+
+
+                <!-- FAVORITE BEACH -->
+
+                <div class="form-group">
+
+                    <label for="favoriteBeach">
+                        Favorite Beach:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="favoriteBeach"
+                        name="favoriteBeach"
+                    >
+
+                    <p
+                        id="favoriteBeachError"
+                        class="form-error"
+                        aria-live="polite"
+                    ></p>
+
+                </div>
+
+
+                <!-- MESSAGE -->
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Beach Message:
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                    ></textarea>
+
+                    <p
+                        id="messageError"
+                        class="form-error"
+                        aria-live="polite"
+                    ></p>
+
+                </div>
+
+
+                <!-- SUCCESS MESSAGE -->
+
+                <p
+                    id="formSuccess"
+                    class="form-success"
+                    aria-live="polite"
+                ></p>
+
+
+                <!-- SUBMIT -->
+
+                <button type="submit">
+                    Send Beach Message 🌊
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- ==========================================
+             API BONUS
+             ========================================== -->
+
+        <section id="beach-api" class="card">
+
+            <h2>Beach Inspiration ☀️</h2>
+
+            <p>
+                Click the button to get some random inspiration!
+            </p>
+
+            <button
+                type="button"
+                id="apiButton"
+            >
+                Get Beach Inspiration
+            </button>
+
+            <p
+                id="apiResult"
+                aria-live="polite"
+            ></p>
+
+        </section>
 
     </main>
 
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+
     <footer>
-        <p>&copy; 2026 My Beach Page | Made with 💗 and sunshine</p>
+
+        <p>
+            &copy; 2026 My Beach Page | Made with 💗 and sunshine
+        </p>
+
     </footer>
-<script>
-
-    const beachButton = document.querySelector("#beachButton");
-    const beachMessage = document.querySelector("#beachMessage");
-
-    beachButton.addEventListener("click", function () {
-        beachMessage.textContent =
-            "The beach is the perfect place to relax, enjoy the waves, and make memories! 🌊☀️💗";
-    });
 
 
-    const nameInput = document.querySelector("#nameInput");
-    const nameGreeting = document.querySelector("#nameGreeting");
+    <!-- ==========================================
+         JAVASCRIPT
+         ========================================== -->
 
-    nameInput.addEventListener("input", function () {
+    <script src="script.js" defer></script>
 
-        if (nameInput.value.trim() !== "") {
-            nameGreeting.textContent =
-                "Welcome to my beach page, " + nameInput.value + "! 🏖️";
-
-            nameGreeting.style.fontWeight = "bold";
-            nameGreeting.style.fontSize = "24px";
-
-        } else {
-            nameGreeting.textContent = "Hello, beach lover! 🏖️";
-            nameGreeting.style.fontWeight = "normal";
-            nameGreeting.style.fontSize = "16px";
-        }
-
-    });
-
-
-    const activityInput = document.querySelector("#activityInput");
-    const addActivityButton = document.querySelector("#addActivityButton");
-    const activityList = document.querySelector("#activityList");
-
-    addActivityButton.addEventListener("click", function () {
-
-        const activityText = activityInput.value.trim();
-
-        if (activityText !== "") {
-
-            const newActivity = document.createElement("li");
-
-            newActivity.textContent = activityText;
-
-            activityList.appendChild(newActivity);
-
-            activityInput.value = "";
-        }
-
-    });
-
-</script>
 </body>
+
 </html>
+```

@@ -1,24 +1,36 @@
-/* Reset */
+```css
+/* ==========================================
+   GENERAL RESET
+   ========================================== */
+
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Main page */
+
+/* ==========================================
+   BODY
+   ========================================== */
+
 body {
-    font-family: "Open Sans", sans-serif;
     background-color: #fff0f6;
     color: #333333;
+    font-family: "Open Sans", sans-serif;
     line-height: 1.6;
 }
 
-/* Header */
+
+/* ==========================================
+   HEADER
+   ========================================== */
+
 #main-header {
     background-color: #ff69b4;
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 40px 20px;
     border-bottom: 5px solid #800080;
 }
 
@@ -32,217 +44,346 @@ body {
     font-size: 1.1rem;
 }
 
-/* Navigation */
+
+/* ==========================================
+   NAVIGATION
+   ========================================== */
+
 .navbar {
     background-color: #800080;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    align-items: center;
+    gap: 25px;
     padding: 15px;
+    flex-wrap: wrap;
 }
 
 .navbar a {
     color: white;
     text-decoration: none;
     font-weight: 600;
-    padding: 8px 15px;
+    padding: 8px 12px;
     border-radius: 8px;
 }
 
-.navbar a:hover {
+.navbar a:hover,
+.navbar a:focus {
     background-color: #ff69b4;
+    color: white;
 }
 
-/* Main content */
+
+/* ==========================================
+   MAIN CONTENT
+   ========================================== */
+
 main {
     max-width: 1000px;
-    margin: 30px auto;
-    padding: 0 20px;
+    margin: 0 auto;
+    padding: 30px 20px;
 }
 
-/* Hero section */
+
+/* ==========================================
+   HEADINGS
+   ========================================== */
+
+h2,
+h3 {
+    font-family: "Poppins", sans-serif;
+    color: #800080;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* ==========================================
+   HERO SECTION
+   ========================================== */
+
 .hero {
     background-color: white;
     text-align: center;
-    padding: 40px;
-    margin-bottom: 25px;
-    border-radius: 15px;
+    padding: 40px 25px;
+    margin-bottom: 30px;
     border: 3px solid #ff69b4;
+    border-radius: 15px;
 }
 
 .hero h2 {
-    color: #800080;
-    font-family: "Poppins", sans-serif;
     font-size: 2rem;
-    margin-bottom: 15px;
 }
 
-/* Cards */
+
+/* ==========================================
+   CARDS
+   ========================================== */
+
 .card {
     background-color: white;
-    border: 3px solid #ff69b4;
-    margin-bottom: 25px;
     padding: 30px;
+    margin-bottom: 30px;
+    border: 3px solid #ff69b4;
     border-radius: 15px;
-}
-
-.card h2 {
-    color: #800080;
-    font-family: "Poppins", sans-serif;
-    margin-bottom: 15px;
 }
 
 .card p {
     margin-bottom: 15px;
 }
 
-/* Favorite things */
+
+/* ==========================================
+   BEACH LIST
+   ========================================== */
+
 .beach-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
-.beach-list div {
-    background-color: #ffe4f1;
+.beach-list > div {
+    background-color: #fff0f6;
     padding: 20px;
+    border: 2px solid #ff69b4;
     border-radius: 12px;
-    border-left: 5px solid #ff69b4;
 }
 
 .beach-list h3 {
-    color: #800080;
-    font-family: "Poppins", sans-serif;
-    margin-bottom: 8px;
+    margin-top: 0;
 }
 
-/* Quote */
+
+/* ==========================================
+   QUOTE
+   ========================================== */
+
 .quote {
-    background-color: #ff69b4;
+    background-color: #800080;
     color: white;
     text-align: center;
-    padding: 35px;
-    border-radius: 15px;
+    padding: 35px 25px;
     margin-bottom: 30px;
+    border-radius: 15px;
 }
 
 .quote h2 {
+    color: white;
+}
+
+.quote p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+
+/* ==========================================
+   BUTTONS
+   ========================================== */
+
+button {
+    background-color: #ff69b4;
+    color: white;
+    border: 2px solid #800080;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin: 10px 5px 15px 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #800080;
+}
+
+button:focus {
+    outline: 3px solid #333333;
+    outline-offset: 3px;
+}
+
+
+/* ==========================================
+   TEXT INPUTS
+   ========================================== */
+
+input,
+textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 2px solid #800080;
+    border-radius: 8px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    background-color: white;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: 3px solid #ff69b4;
+    outline-offset: 2px;
+}
+
+
+/* ==========================================
+   LABELS
+   ========================================== */
+
+label {
+    display: block;
+    font-weight: 600;
+    color: #800080;
+    margin-top: 10px;
+}
+
+
+/* ==========================================
+   ACTIVITY LIST
+   ========================================== */
+
+#activityList {
+    margin-top: 10px;
+    padding-left: 25px;
+}
+
+#activityList li {
+    margin-bottom: 8px;
+}
+
+
+/* ==========================================
+   CONTACT FORM
+   ========================================== */
+
+#contact-form {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border: 3px solid #ff69b4;
+    border-radius: 15px;
+}
+
+#contact-form h2 {
+    color: #800080;
     font-family: "Poppins", sans-serif;
     margin-bottom: 10px;
 }
 
-/* Footer */
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+/* ==========================================
+   FORM ERRORS
+   ========================================== */
+
+.form-error {
+    color: #800000;
+    font-weight: 600;
+    min-height: 24px;
+    margin: 0 0 5px 0;
+}
+
+
+/* ==========================================
+   FORM SUCCESS MESSAGE
+   ========================================== */
+
+.form-success {
+    color: #006400;
+    font-weight: 700;
+    min-height: 24px;
+    margin: 10px 0;
+}
+
+
+/* ==========================================
+   API SECTION
+   ========================================== */
+
+#beach-api {
+    text-align: center;
+}
+
+#apiResult {
+    margin-top: 15px;
+    font-weight: 600;
+    color: #800080;
+    min-height: 25px;
+}
+
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
 footer {
     background-color: #800080;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px 20px;
+    margin-top: 30px;
 }
 
-/* Tablet */
+footer p {
+    margin: 0;
+}
+
+
+/* ==========================================
+   TABLET / MOBILE
+   ========================================== */
+
 @media (max-width: 768px) {
+
     #main-header h1 {
         font-size: 2rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar a {
+        width: 100%;
+        text-align: center;
     }
 
     .beach-list {
         grid-template-columns: 1fr;
     }
 
-    .navbar {
-        gap: 10px;
-        flex-wrap: wrap;
-    }
-}
-
-/* Phone */
-@media (max-width: 480px) {
-    #main-header {
-        padding: 35px 15px;
-    }
-
-    #main-header h1 {
-        font-size: 1.7rem;
-    }
-
     main {
-        padding: 0 15px;
+        padding: 20px 15px;
     }
 
     .card,
-    .hero {
+    .hero,
+    #contact-form {
         padding: 20px;
     }
 
-    .navbar a {
-        font-size: 0.9rem;
+    button {
+        width: 100%;
+        margin-right: 0;
     }
 }
-
-/* JavaScript Interactive Section */
-
-.interactive-section button,
-.card button {
-
-    background-color: #800080;
-    color: white;
-    border: none;
-    padding: 10px 18px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 600;
-    margin: 5px;
-
-}
-
-.interactive-section button:hover,
-.card button:hover {
-
-    background-color: #ff69b4;
-
-}
-
-.interactive-section input,
-.card input {
-
-    padding: 10px;
-    border: 2px solid #ff69b4;
-    border-radius: 8px;
-    margin: 5px;
-    font-family: "Open Sans", sans-serif;
-
-}
-
-.interactive-section input:focus,
-.card input:focus {
-
-    outline: 3px solid #800080;
-
-}
-
-#beachMessage {
-
-    margin-top: 15px;
-    font-weight: 600;
-
-}
-
-#nameGreeting {
-
-    margin-top: 10px;
-    color: #800080;
-
-}
-
-#activityList {
-
-    margin-top: 15px;
-    padding-left: 30px;
-
-}
-
-#activityList li {
-
-    margin-bottom: 8px;
-
-}
+```
